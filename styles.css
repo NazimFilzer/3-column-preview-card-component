@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+    margin: 20px;
+    border-radius: 20px;
+}
+img {
+    /* display: block; */
+    margin-bottom: 20px;
+}
+
+.sedan {
+
+    background-color: hsl(31, 77%, 52%);
+    padding: 1.875rem;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 1.875rem;
+
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 1.875rem;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.head {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+}
+
+.para {
+    font-size: 0.9375rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 89%;
+}
+
+.btn {
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    font-size: small;
+    margin-top: 20px;
+    padding: 0.6875em;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+#btn1:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: white 2px solid;
+}
+#btn2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: white 2px solid;
+}
+#btn3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: white 2px solid;
+    
+}
+@media only screen and (min-width:750px) {
+    
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 70%;
+        height: 450px;
+        border-radius: 8px;
+    }
+    .sedan{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+    .suv{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .luxury{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+
+    }
+    img{
+        width: 60px;
+    }
+    .para{
+        width: 87%;
+    }
+    .btn{
+        max-width: 145px;
+    }
+
+    .head{
+        font-size: 2.82rem;
+    }
+    
+    
+}
+
